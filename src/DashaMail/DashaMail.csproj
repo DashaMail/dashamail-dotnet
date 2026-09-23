@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>10.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <RootNamespace>DashaMail</RootNamespace>
+    <AssemblyName>DashaMail</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>DashaMail</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>DashaMail</Authors>
+    <Company>DashaMail</Company>
+    <Description>Official .NET SDK for the DashaMail REST API v2</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://dashamail.ru/api/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/DashaMail/dashamail-dotnet</RepositoryUrl>
+    <PackageTags>dashamail;email;sdk;api;transactional-email;email-marketing</PackageTags>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+  </PropertyGroup>
+
+</Project>

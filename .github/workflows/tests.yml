@@ -1,0 +1,25 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '6.0.x'
+
+      - name: Restore
+        run: dotnet restore tests/DashaMail.Tests/DashaMail.Tests.csproj
+
+      - name: Build
+        run: dotnet build tests/DashaMail.Tests/DashaMail.Tests.csproj --no-restore
+
+      - name: Test
+        run: dotnet test tests/DashaMail.Tests/DashaMail.Tests.csproj --no-build --verbosity normal
